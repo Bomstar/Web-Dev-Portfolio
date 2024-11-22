@@ -1,5 +1,5 @@
 *{
-    font-family: sans-serif;
+    font-family: open sans;
 }
 
 body{
@@ -9,11 +9,11 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
+    margin: 0 120px;
 }
-nav h1{
-    font-weight: 800;
-    font-size: 45px;
-    margin-left: 90px;
+nav h3{
+    font-weight: 700;
+    font-size: 38px;
     color: #181818;
 }
 
@@ -34,12 +34,48 @@ nav a {
 .primary-color {
     color: #FD6E0A;
 }
-#hire-btn {
+.primary-btn, .secendary-btn {
    color: white;
-   font-weight: 700;
+   font-weight: 600;
+   font-size: 16px;
    background-color: #FD6E0A;
    border: none;
-   padding: 18px 35px;
+   padding: 15px 30px;
    border-radius: 5px;
-   margin-right: 80px;
+}
+
+/* Header Style */
+.header-color {
+    background: #FFF8F3;
+}
+
+.bannar {
+    margin: 100px 30px 30px 120px;
+}
+
+.bannar  h5 {
+    color: #474747;
+    font-size: 35px;
+    font-weight: 600;
+    margin:  0;
+}
+
+.bannar h1 {
+    color: #181818;
+    font-size: 65px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.bannar p {
+    color: #757575;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.secendary-btn {
+    color: #FD6E0A;
+    background-color: transparent;
+    border: 1px solid #FD6E0A;
+    margin-left: 10px;
 }
