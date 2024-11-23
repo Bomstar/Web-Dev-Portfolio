@@ -10,6 +10,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 0 120px;
+    padding-top: 4%% ;
 }
 nav h3{
     font-weight: 700;
@@ -40,24 +41,35 @@ nav a {
    font-size: 16px;
    background-color: #FD6E0A;
    border: none;
-   padding: 15px 30px;
+   padding: 12px 25px;
    border-radius: 5px;
+   margin: 0;
 }
 
 /* Header Style */
-.header-color {
-    background: #FFF8F3;
+.header-content {
+    background-color: #FFF8F3;
+    background-image: url(./images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .bannar {
-    margin: 100px 30px 30px 120px;
+    display: flex;
+    margin: 60px 30px 0px 120px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.bannar-content {
+    margin-bottom: 0px;
 }
 
 .bannar  h5 {
     color: #474747;
     font-size: 35px;
     font-weight: 600;
-    margin:  0;
+    margin:  0 0 20px 0;
 }
 
 .bannar h1 {
@@ -78,4 +90,10 @@ nav a {
     background-color: transparent;
     border: 1px solid #FD6E0A;
     margin-left: 10px;
+}
+
+.profile-pc {
+    margin: 0;
+    border: 1px solid black;
+    flex-shrink: 0;
 }
