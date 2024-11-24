@@ -6,6 +6,9 @@
 body{
     margin: 0;
 }
+
+/* navigetion style */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -35,6 +38,9 @@ nav a {
 .primary-color {
     color: #FD6E0A;
 }
+
+/* Buttan Style */
+
 .primary-btn, .secendary-btn {
    color: white;
    font-weight: 600;
@@ -47,9 +53,24 @@ nav a {
    cursor: pointer;
 }
 
+.secendary-btn {
+    color: #FD6E0A;
+    background-color: transparent;
+    border: 1px solid #FD6E0A;
+    margin-left: 10px;
+}
+
 /* Header Style */
 .header-content {
     background-color: #FFF8F3;
+}
+
+.side-img {
+    position: absolute;
+    width: 70px;
+    height: 465px;
+    margin: 60px 0 0 30px;
+
 }
 
 .bannar {
@@ -60,7 +81,7 @@ nav a {
 }
 
 .bannar-content {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     width: 40%;
 }
 
@@ -84,13 +105,13 @@ nav a {
     font-size: 15px;
 }
 
-.secendary-btn {
-    color: #FD6E0A;
-    background-color: transparent;
-    border: 1px solid #FD6E0A;
-    margin-left: 10px;
-}
+/* Profile pic style */
 
+.img-cont {
+    position: absolute;
+    right: 0;
+    top: 140px;
+}
 
 .bg-img {
     width: 500px;
@@ -102,4 +123,52 @@ nav a {
     width: 380px;
     height: 391px;
     right: 8px;
+}
+
+/* Main Css Style */
+
+.about-cont {
+    background-color: #FFF8F3;
+    margin: 120px;
+    padding: 70px 120px;
+    color: #181818;
+}
+
+.about-cont > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 8px;
+    border: 1px solid #181818;
+}
+
+.about-cont > div > h1 {
+    margin: 0;
+}
+
+.about-cont > div > p {
+    color: #757575;
+}
+
+.about-cont > div > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.about-cont > div > ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-cont > div > ul li p{
+    margin: 0;
+    color: #474747;
 }
