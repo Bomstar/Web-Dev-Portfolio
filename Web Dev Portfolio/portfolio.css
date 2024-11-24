@@ -2,15 +2,15 @@
     font-family: open sans;
 }
 
+/* No need for body width height */
 body{
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
 }
 nav{
     display: flex;
     justify-content: space-between;
     margin: 0 120px;
-    padding-top: 4%% ;
+    padding-top: 10px ;
 }
 nav h3{
     font-weight: 700;
@@ -24,7 +24,7 @@ nav > ul {
 }
 nav li {
     list-style: none;
-    margin-right: 50px ;
+    margin-left: 50px ;
 }
 
 nav a {
@@ -44,25 +44,24 @@ nav a {
    padding: 12px 25px;
    border-radius: 5px;
    margin: 0;
+   cursor: pointer;
 }
 
 /* Header Style */
 .header-content {
     background-color: #FFF8F3;
-    background-image: url(./images/header_bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
 }
 
 .bannar {
     display: flex;
-    margin: 60px 30px 0px 120px;
-    border: 1px solid black;
+    align-items: center;
+    margin: 10px 0 10px 120px;
     justify-content: space-between;
 }
 
 .bannar-content {
     margin-bottom: 0px;
+    width: 40%;
 }
 
 .bannar  h5 {
@@ -92,8 +91,15 @@ nav a {
     margin-left: 10px;
 }
 
+
+.bg-img {
+    width: 500px;
+    margin-top: 80px;
+} 
+
 .profile-pc {
-    margin: 0;
-    border: 1px solid black;
-    flex-shrink: 0;
+    position: absolute;
+    width: 380px;
+    height: 391px;
+    right: 8px;
 }
