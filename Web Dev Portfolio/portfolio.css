@@ -208,7 +208,7 @@ nav a {
 
 /* summery */
 .summery-cont {
-    margin: 0 150px 150px 150px;
+    margin: 0 150px 80px 150px;
 }
 
 .sum-header {
@@ -239,4 +239,36 @@ nav a {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+/* Footer container */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 150px;
+    gap: 60px;
+    background-color: #FFF8F3;
+}
+
+.footer-container p {
+    width: 70%;
+} 
+
+.text-us {
+    width: 350px;
+    height: 45px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: none;
+}
+
+.text-box {
+    width: 345px;
+    height: 150px;
+    padding: 30px 0 0 30px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 20px;
 }
