@@ -50,6 +50,7 @@ nav a {
    padding: 12px 25px;
    border-radius: 5px;
    margin: 0;
+   margin-left: 10px;
    cursor: pointer;
 }
 
@@ -57,7 +58,6 @@ nav a {
     color: #FD6E0A;
     background-color: transparent;
     border: 1px solid #FD6E0A;
-    margin-left: 10px;
 }
 
 /* Header Style */
@@ -67,8 +67,6 @@ nav a {
 
 .side-img {
     position: absolute;
-    width: 70px;
-    height: 465px;
     margin: 60px 0 0 30px;
 
 }
@@ -120,9 +118,8 @@ nav a {
 
 .profile-pc {
     position: absolute;
-    width: 380px;
-    height: 391px;
-    right: 8px;
+    right: 35px;
+    bottom: 4.7px;
 }
 
 /* Main Css Style */
@@ -271,4 +268,20 @@ nav a {
     border-radius: 5px;
     resize: none;
     margin-bottom: 20px;
+}
+
+/* Animet Button */
+
+.animet-btn {
+    transition: transform 0.5s ease
+}
+
+.animet-btn:hover {
+    transform: scale(1.05);
+    border: 1px solid transparent;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.footer-container a {
+   margin-right: 4px;
 }
