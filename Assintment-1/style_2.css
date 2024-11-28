@@ -38,3 +38,39 @@ body {
 
 /* main style */
 
+/* section - 1 */
+
+.offer-cont , .offer-text-itmes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.offer-text-itmes {
+    margin: 0;
+}
+
+.offer-text-itmes > h1 {
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+    color: #F00;
+    margin-bottom: 30px;
+}
+
+.offer-text-itmes p{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    color: #F00;
+}
+
+.offer-text-itmes h2{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 10px;
+}
