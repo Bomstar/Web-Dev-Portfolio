@@ -4,7 +4,8 @@
 
 /* No need for body width height */
 body{
-    margin: 0;
+    max-width: 1264px;
+    margin: 0 auto;
 }
 
 /* navigetion style */
@@ -62,6 +63,7 @@ nav a {
 
 /* Header Style */
 .header-content {
+    position: relative;
     background-color: #FFF8F3;
 }
 
@@ -175,6 +177,7 @@ nav a {
 
 .skill-cont {
     margin: 80px 150px;
+    height: 578px;
 }
 
 .text-cont {
@@ -182,6 +185,10 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.text-cont > p {
+    padding: 0 140px;
 }
 
 .skill {
