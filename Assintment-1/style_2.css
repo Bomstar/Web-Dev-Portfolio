@@ -304,6 +304,15 @@ header , main {
     gap: 10px;
 }
 
+.img-gellery img {
+    transition: .2s;
+}
+
+.img-gellery img:hover {
+    transition: .5s;
+    transform: scale(1.1);
+}
+
 /* section 6 */
 
 .section-6 {
