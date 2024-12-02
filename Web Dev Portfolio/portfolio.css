@@ -25,6 +25,7 @@ nav h3{
 nav > ul {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 nav li {
     list-style: none;
@@ -291,4 +292,108 @@ nav a {
 
 .footer-container a {
    margin-right: 4px;
+}
+
+.hide{
+    display: none;
+}
+/* Responsive for Mobile version */
+
+/* Media quiry */
+
+@media screen and (max-width: 576px) {
+    /* header section */
+    nav, nav > ul , .bannar , 
+    .about-cont > div > ul , .summery-text , 
+    .skill , .footer-container{
+        flex-direction: column;
+    }
+
+    nav > h3 {
+        text-align: center;
+    }
+
+    nav > ul , nav , .bannar{
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    nav li {
+        margin: 10px 0 0 0;
+    }
+
+    .bannar h1 {
+        font-size: 50px;
+    }
+
+    .bannar-content {
+        width: 80%;
+    }
+
+    .img-cont {
+        position: relative;
+        margin: 0;
+        top: 10px;
+        width: 100%;
+    }
+
+    .bg-img {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+ /* main section */
+
+ /* About me */
+
+ .about-cont , .summery-cont ,
+ .skill-cont {
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+ }
+
+ .text-cont > p {
+    padding: 20px;
+ }
+
+ .all-skills {
+    position: sticky;
+    top: 1px;
+    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+ }
+
+ .all-skills:hover {
+    transform: scale(1);
+ }
+
+ #skills-2 {
+    z-index: 2;
+    top: 40px;
+ }
+
+ #skills-3 {
+    z-index: 3;
+    top: 80px;
+ }
+
+ #skills-4 {
+    z-index: 4;
+    top: 220px;
+ }
+
+ /* footer section  */
+
+ .footer-container {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ }
+
+ .footer-container p {
+    width: 100%;
+ }
 }
