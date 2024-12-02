@@ -52,7 +52,7 @@ nav a {
    padding: 12px 25px;
    border-radius: 5px;
    margin: 0;
-   margin-left: 10px;
+   margin-right: 10px;
    cursor: pointer;
 }
 
@@ -368,6 +368,7 @@ nav a {
 
  .all-skills:hover {
     transform: scale(1);
+    box-shadow: 0px;
  }
 
  #skills-2 {
