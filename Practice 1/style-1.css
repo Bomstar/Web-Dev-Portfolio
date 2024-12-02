@@ -11,6 +11,7 @@ body {
     margin: 0;
     background-image: url("./images/banner/banner3.png");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .about-header-cont {
     width: 450px;
@@ -157,17 +158,12 @@ body {
 /* Media quiry */
 
 @media screen and (max-width: 576px) {
-
-    .header-container {
-
-    }
-
     .about-header-cont , .about-container, .my-plan, .bottum-container {
         margin: 20px;
     }
 
     .about-header-cont h1 {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     
@@ -194,7 +190,7 @@ body {
         font-size: 30px;
     }
     
-    .footer-items {
+    .footer-items , .image-container > img {
         width: auto;
     }
 }
