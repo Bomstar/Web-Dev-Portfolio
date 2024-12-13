@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    max-width: 1578px;
+    max-width: 1264px;
 }
 
 header , main {
@@ -10,29 +10,25 @@ header , main {
 /* header style */
 
 .header-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url('./images/Banner Image.png');
     background-repeat: no-repeat;
-    background-position: center;
-    border-radius:   20px;
+    background-size: 100% 100%;
+    border-radius: 20px;
 }
 
 .header-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
-    padding: 163px 350px;
+    padding: 0;
     border-radius: 20px;
     color: #fff;
+    padding: 6rem 0;
 }
 
 
 .header-items > h2 , h1{
     font-family: Merriweather;
     font-size: 32px;
+    text-align: center
 }
 
 
@@ -40,6 +36,7 @@ header , main {
     font-size: 72px;
     text-align: center;
     margin: 0;
+    padding: 0 20px;
 }
 
 /* main style */
@@ -51,7 +48,12 @@ header , main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 40px;
+}
+
+.offer-cont {
+    gap: 60px;
+    padding: 0 10px;
 }
 
 .offer-text-itmes {
@@ -81,6 +83,12 @@ header , main {
     margin-top: 10px;
 }
 
+.offer-img-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* section-2 */
 
 .section-2 {
@@ -90,23 +98,25 @@ header , main {
     margin: 120px 0;
     background-image: url(./images/Vectorrr.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     color: #fff;
     border-radius: 18px;
 }
 
 .section-2-items {
     display: flex;
-    padding: 60px 126px;
+    width: 100%;
+    padding: 60px;
+    gap: 30px;
     background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%); 
     border-radius: 18px;
 }
 
-
 .section-2 h1 {
     font-family: Merriweather;
-    font-size: 64px;
+    font-size: 44px;
     font-weight: 900;
-    line-height: 88px; /* 137.5% */
+    line-height: 60px; /* 137.5% */
     letter-spacing: 7.04px;
     margin-bottom: 0;
 }
@@ -130,23 +140,37 @@ header , main {
     padding-left: 25px;
 }
 
+.year24 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .section-2-items div {
+    width: 50%;
+} */
+
+.section-2-items img {
+    width: 100%;
+    margin-right: 70px;
+}
+
 /* section 3 */
 
 .section-3 {
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
+    align-items: center;
+    gap: 50px;
+    /* justify-content: space-between; */
 }
 
 .upco-offer {
-   max-width: 33.33%;
-   max-height: 33.33%;
+   width: calc(100% / 3);
 }
 
 .upcoming-offer-1 { 
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .upcoming-offer-1 > h2{
@@ -164,6 +188,7 @@ header , main {
     font-weight: 900;
     margin-top: 15px;
     margin-bottom: 0;
+    text-align: left;
 }
 
 .upcoming-offer-1 > p {
@@ -173,18 +198,19 @@ header , main {
     line-height: 32px; /* 160% */
 }
 .upcoming-offer-2 {
-    width: 365px;
-    height: 365px;
     border: 10px solid #F00;
     border-radius: 50%;
     padding: 35px;
+}
+
+.upcoming-offer-2 > img {
+    width: 100%;
 }
 
 .upcoming-offer-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 80px;
 }
 
 .upcoming-offer-3 > h1 {
@@ -200,6 +226,11 @@ header , main {
     font-family: Inter;
     font-size: 20px;
     line-height: 32px; /* 160% */
+}
+
+.upcoming-offer-3 > div {
+    display: flex;
+    justify-content: center;
 }
 
 /* section 4 */
@@ -246,27 +277,36 @@ header , main {
 
 .Holidays-img-cont {
     overflow: hidden;
-    height: 670px;
+    position: relative;
+    height: 500px;
 }
 
 .Holidays-img-cont img:nth-child(1){
-    position: relative;
-    top: 5px;
-    left: 870px;
+    position: absolute;
+    height: 350px;
+    right: 0;
     z-index: -1;
 }
 
+.Holidays-img-cont img:nth-child(2) {
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+}
+
 .Holidays-img-cont img:nth-child(4) {
-    position: relative;
+    position: absolute;
+    height: 200px;
     z-index: 11;
-    bottom: 960px;
-    right: 85px;
+    top: 70px;
+    right: 245px;
 }
 
 .Holidays-img-cont img:nth-child(3) {
-    position: relative;
-    bottom: 670px;
-    left: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 500px;
 }
 
 /* section 5*/
@@ -294,6 +334,7 @@ header , main {
 .sec5-text-items p {
     color: rgba(7, 2, 17, 0.60);
     font-family: Inter;
+    text-align: center;
     font-size: 20px;
     line-height: 32px; /* 160% */
 }
@@ -305,6 +346,7 @@ header , main {
 }
 
 .img-gellery img {
+    width: 100%;
     transition: .2s;
 }
 
@@ -319,7 +361,7 @@ header , main {
     border-radius: 16px;
     background: rgba(255, 0, 0, 0.1);
     margin: 120px 0;
-    padding: 120px 0;
+    padding: 60px 0;
 }
 
 .subscriber-cont {
@@ -433,4 +475,132 @@ header , main {
     font-size: 24px;
     font-weight: 500;
     line-height: 40px; /* 166.667% */
+}
+
+.hide {
+    display: none;
+}
+/* Responsive For Mobile */
+/* media quiry */
+
+@media screen and (max-width: 576px) {
+    header , main {
+        margin: 20px;
+    }
+    .header-cont {
+        border-radius: 6px;
+    }
+
+    .header-items {
+        height: 100%;
+        padding: 40px;
+    }
+
+    .header-items > h2 {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .header-items > h1 {
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .offer-text-itmes > h1 {
+        font-size: 60px;
+    }
+
+    .offer-text-itmes p {
+        font-size: 22px;
+    }
+
+    .offer-text-itmes h2 {
+        font-size: 44px;
+    }
+
+    .offer-img-item {
+        padding: 0 10px;
+        object-fit: contain;
+    }
+
+    .offer-img-item > img{
+        width: 100%;
+    }
+
+    /* section-2 */
+
+    .section-2 {
+        background-size: 100% 100%;
+        margin: 60px 0;
+    }
+
+    .section-2-items {
+        padding: 5px;
+    }
+
+    .section-2 h1 {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 4px;
+    }
+
+    .section-2 p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* .section-3 */
+
+    .section-3 {
+        flex-direction: column;
+    }
+
+    .upco-offer {
+        width: auto;
+    }
+
+    /* .section-4 */
+
+    .section-4 {
+        margin-top: 80px;
+    }
+
+    .Holidays-offer h1:nth-child(2) {
+        font-size: 44px;
+    }
+
+    .Holidays-offer p {
+        font-size: 16px;
+    }
+
+    /* .section-5 */
+
+    .img-gellery{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .sub-inp input , .sub-inp button{
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+    /* footer section */
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    .addresing {
+        flex-direction: column;
+    }
+
+    .addresing div {
+        width: 100%;
+    }
+
+    .addresing div:nth-child(2) {
+        align-items: start;
+    }
 }
